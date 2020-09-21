@@ -1,0 +1,36 @@
+<!--
+Author: chankruze (chankruze@geekofia.in)
+Created: Mon Sep 21 2020 20:17:31 GMT+0530 (India Standard Time)
+
+Copyright (c) Geekofia 2020 and beyond
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+    <div id="live"></div>
+
+    <script type="text/javascript">
+      var options = {
+        width: 1000,
+        height: 720,
+        channel: "iplive",
+        // video: "<video ID>",
+        // collection: "<collection ID>",
+        // only needed if your site is also embedded on embed.example.com and othersite.example.com 
+        // parent: ["embed.example.com", "othersite.example.com"]
+      };
+      var player = new Twitch.Player("live", options);
+      player.setVolume(0.5);
+    </script>
+</body>
+
+</html>
